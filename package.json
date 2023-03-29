@@ -1,7 +1,7 @@
 {
-  "name": "vite-plugin-screeps",
+  "name": "rollup-plugin-screeps2",
   "version": "0.0.1",
-  "description": "",
+  "description": "Rollup Plugin for Screeps - auto upload, resolve source-map",
   "main": "./dist/vite-plugin-screeps.js",
   "module": "./dist/vite-plugin-screeps.mjs",
   "exports": {
@@ -18,9 +18,9 @@
   "scripts": {
     "dev": "vite build"
   },
-  "keywords": [],
+  "keywords": ["screeps", "rollup", "vite", "source-map"],
   "author": "rsooio",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.15.11",
     "rollup": "^3.19.1",
