@@ -2,18 +2,33 @@
   "name": "vite-plugin-screeps",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/vite-plugin-screeps.js",
+  "module": "./dist/vite-plugin-screeps.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/vite-plugin-screeps.mjs",
+      "require": "./dist/vite-plugin-screeps.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite build"
   },
   "keywords": [],
   "author": "rsooio",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^18.15.11",
     "rollup": "^3.19.1",
-    "vite": "^4.1.4"
+    "vite": "^4.1.4",
+    "vite-plugin-dts": "^2.1.0"
   },
   "dependencies": {
-    "screeps-api": "^1.16.0"
+    "axios": "^1.3.4",
+    "source-map": "^0.6.1"
   }
 }
