@@ -71,6 +71,7 @@ export function screeps(config: ScreepsConfig): PluginOption {
         .catch(({ message }) => [null, message]);
 
       if (message) throw new Error(message)
+      if (data.error) throw new Error(data.error)
       log(`uploaded at ${new Date(data.timestamp).toJSON()}`)
     }
   }
