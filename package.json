@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-screeps2",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Rollup Plugin for Screeps - auto upload, resolve source-map",
   "main": "./dist/vite-plugin-screeps.js",
   "module": "./dist/vite-plugin-screeps.mjs",
@@ -12,7 +12,6 @@
   },
   "type": "module",
   "types": "./dist/index.d.ts",
-  "typings": "./dist/index.d.ts",
   "files": [
     "dist"
   ],

@@ -6,10 +6,21 @@ export default defineConfig({
     target: "es2015",
     lib: {
       entry: "src/index.ts",
-      formats: ['cjs'],
     },
     rollupOptions: {
-      external: ['axios']
+      external: ['axios'],
+      output: [
+        {
+          format: 'es',
+          entryFileNames: 'vite-plugin-screeps.mjs',
+          dir: 'dist',
+        },
+        {
+          format: 'cjs',
+          entryFileNames: 'vite-plugin-screeps.js',
+          dir: 'dist',
+        }
+      ]
     }
   },
   plugins: [
