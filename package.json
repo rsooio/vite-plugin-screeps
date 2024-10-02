@@ -10,6 +10,7 @@
       "require": "./dist/vite-plugin-screeps.js"
     }
   },
+  "type": "module",
   "types": "./dist/index.d.ts",
   "typings": "./dist/index.d.ts",
   "files": [
